@@ -1,4 +1,5 @@
 import React from 'react'
+import MeetupList from '../components/meetups/MeetupList';
 
 function AllMeetups() {
 
@@ -28,9 +29,7 @@ function AllMeetups() {
     return (
         <div>
             <h1>All Meetups</h1>
-           {DUMMY_DATA.map((meetup)=>{
-               return <li key={meetup.id}>{meetup.title}</li>
-           })}
+                <MeetupList meetups={DUMMY_DATA}/>
         </div>
     )
 }
