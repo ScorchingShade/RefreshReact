@@ -3,10 +3,14 @@ import { createContext, useState } from "react";
 const FavouritesContext = createContext({
   favourites: [],
   totalFavourites: 0,
+  addFavourite:(favouriteMeetup)=>{},//these three don't do anything but good for IDE autocomplete
+  removeFavourite:(meetupId)=>{},
+  itemIsFavourite:(meetupId)=>{},
+
 });
 
-function FavouritesContextProvider(props) {
-  const [userFavourites, setUserFavourites] = useState(initialState);
+export function FavouritesContextProvider(props) {
+  const [userFavourites, setUserFavourites] = useState([]);
 
   const addFavouriteHandler = (favouriteMeetup) => {
     setUserFavourites((prevUserFavourites) => {
@@ -22,17 +26,22 @@ function FavouritesContextProvider(props) {
   }
 
   const itemIsFavouriteHandler = (meetupId)=>{
-      return userFavourites.some(meetup=>meetup.id===meetupid);
+      return userFavourites.some(meetup=>meetup.id===meetupId);
   }
 
   const context = {
     favourites: userFavourites,
     totalFavourites: userFavourites.length,
+    addFavourite:addFavouriteHandler,
+    removeFavourite:removeFavouriteHandler,
+    itemIsFavourite:itemIsFavouriteHandler,
   };
 
   return (
     <FavouritesContext.Provider value={context}>
-      ;{props.children}
+      {props.children}
     </FavouritesContext.Provider>
   );
 }
+
+export default FavouritesContext;
