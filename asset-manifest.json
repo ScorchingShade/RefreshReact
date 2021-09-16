@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/RefreshReact/static/css/main.2d862ec3.chunk.css",
-    "main.js": "/RefreshReact/static/js/main.468e5c06.chunk.js",
-    "main.js.map": "/RefreshReact/static/js/main.468e5c06.chunk.js.map",
+    "main.js": "/RefreshReact/static/js/main.47d9edd7.chunk.js",
+    "main.js.map": "/RefreshReact/static/js/main.47d9edd7.chunk.js.map",
     "runtime-main.js": "/RefreshReact/static/js/runtime-main.af2e9f0d.js",
     "runtime-main.js.map": "/RefreshReact/static/js/runtime-main.af2e9f0d.js.map",
     "static/js/2.70ab6119.chunk.js": "/RefreshReact/static/js/2.70ab6119.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.af2e9f0d.js",
     "static/js/2.70ab6119.chunk.js",
     "static/css/main.2d862ec3.chunk.css",
-    "static/js/main.468e5c06.chunk.js"
+    "static/js/main.47d9edd7.chunk.js"
   ]
 }
